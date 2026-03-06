@@ -12,7 +12,7 @@
     <p class="text-stone-600 mt-2">Permudah perhitungan zakat Anda sesuai ketetapan syariah.</p>
   </header>
 
-  <main class="w-full md:max-w-5xl max-w-lg p-6 bg-white rounded-3xl shadow-2xl border border-stone-200 mb-12">
+  <main class="lg:max-w-5xl md:max-w-2xl max-w-md w-[90%] p-6 bg-white rounded-3xl shadow-2xl border border-stone-200 mb-12">
     <div class="mb-6">
       <label for="jenis-zakat" class="block text-sm font-semibold text-emerald-800 mb-2">Pilih Jenis Zakat</label>
       <select id="jenis-zakat" class="w-full p-3 rounded-xl border border-stone-300 focus:ring-2 focus:ring-emerald-500 outline-none">
@@ -37,18 +37,19 @@
       </div>
     </div>
 
-    <div id="form-emas" class="hidden space-y-4">
+    <div id="form-emas" class="space-y-4 hidden">
       <div>
         <label for="total-emas" class="block text-sm font-semibold text-emerald-800 mb-2">Total Emas (gram)</label>
         <input type="number" id="total-emas" placeholder="0" class="w-full p-3 rounded-xl border border-stone-300 focus:ring-2 focus:ring-emerald-500 outline-none">
       </div>
     </div>
 
-    <button id="btn-hitung" class="w-full mt-8 bg-emerald-700 text-white font-bold py-4 rounded-xl hover:bg-emerald-600 transition-all active:scale-90">
+
+    <button id="tombol-hitung" class="w-full mt-8 bg-emerald-700 text-white font-bold py-4 rounded-xl hover:bg-emerald-600 transition-all active:scale-90">
       Hitung Zakat
     </button>
 
-    <section id="hasil" class="mt-8 p-6 bg-emerald-900 rounded-2xl border border-emerald-100">
+    <section id="hasil" class="mt-8 p-6 bg-emerald-900 rounded-2xl border border-emerald-100 hidden">
       <h2 class="text-lg font-bold text-white mb-4 text-center">Hasil Perhitungan</h2>
       <div class="space-y-2 text-sm text-white">
         <div class="flex justify-between">
@@ -63,7 +64,7 @@
 
         <div class="flex justify-between">
           <span>Status:</span> 
-          <span id="res-status" class="font-bold uppercase text-red-700">Tidak Wajib</span>
+          <span id="res-status" class="font-bold uppercase">Tidak Wajib</span>
         </div>
 
         <hr class="border-emerald-200 my-2">
