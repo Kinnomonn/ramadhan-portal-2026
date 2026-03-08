@@ -21,7 +21,7 @@ function progressTilawah () {
     kataMotivasi.textContent = "Hampir selesai";
     persentaseTeks.textContent = `${perhitungan}%`;
     barPersentase.style.width = `${perhitungan}%`;
-  } else if (perhitungan == 100) {
+  } else if (perhitungan > 100) {
     kataMotivasi.textContent = "Target tercapai";
     persentaseTeks.textContent = `${perhitungan}%`;
     barPersentase.style.width = `${perhitungan}%`;
