@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do List Ramadan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-emerald-900">
+  <header class="bg-emerald-800 text-stone-50 p-4 shadow-2xl">
+    <nav class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+      <div class="flex items-center gap-2">
+        <div class="w-10 h-10 bg-stone-50 rounded-full flex items-center justify-center text-emerald-800 font-bold text-xl">
+          🕌
+        </div>
+        <h1 class="text-base font-bold bg-stone-50 rounded-2xl text-emerald-800 px-4 py-2">Ramadan To do List</h1>
+      </div>
+
+      <ul class="flex items-center gap-4 bg-emerald-900/50 p-2 rounded-xl text-sm font-medium">
+        <li><a href="index.html"><button class="px-4 py-2 bg-stone-50 text-emerald-800 rounded-lg shadow">Shalat</button></a></li>
+        <li><a href="quran.html"><button class="px-4 py-2 hover:bg-emerald-700 transition-all rounded-lg">Qur'an</button></a></li>
+        <li><a href="puasa.html"><button class="px-4 py-2 hover:bg-emerald-700 transition-all rounded-lg">Puasa</button></a></li>
+        <li><a href="dzikir.html"><button class="px-4 py-2 hover:bg-emerald-700 transition-all rounded-lg">Dzikir</button></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="max-w-8xl mx-auto p-6">
+    <section class="mt-6 p-6 bg-emerald-800/40 rounded-3xl border border-emerald-500/30 flex justify-between items-center text-stone-50 backdrop-blur-sm">
+      <div>
+        <p class="text-xs tracking-widest opacity-70">Daily Progress</p>
+        <p class="text-xl font-bold" id="status-motivasi">Ayo mulai ibadahmu! ✨</p>
+      </div>
+      <div class="flex flex-col items-end">
+        <span class="text-4xl font-black text-stone-50 mb-2"  id="jumlah-persen">0%</span>
+        <p class="text-[10px] opacity-60">Target: 100%</p>
+      </div>
+    </section>
+
+    <section class="mt-[4rem] bg-stone-50 p-6 md:p-8 rounded-[2rem] shadow-2xl">
+        <div class="flex justify-center items-center mb-12 text-center">
+          <h2 class="text-3xl font-bold text-emerald-900">Shalat Wajib</h2>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+      
+          <label for="subuh" class="flex flex-col justify-between items-center min-h-[150px] bg-emerald-800 p-6 text-stone-50 rounded-2xl cursor-pointer hover:scale-105 transition-transform">
+            <span class="text-3xl mb-2">🌙</span>
+            <span class="font-bold">Subuh</span>
+            <input type="checkbox" id="subuh" class="w-6 h-6 mt-4 accent-emerald-500">
+          </label>
+          <label for="dzuhur" class="flex flex-col justify-between items-center min-h-[150px] bg-emerald-800 p-6 text-stone-50 rounded-2xl cursor-pointer hover:scale-105 transition-transform">
+            <span class="text-3xl mb-2">☀️</span>
+            <span class="font-bold">Dzuhur</span>
+            <input type="checkbox" id="dzuhur" class="w-6 h-6 mt-4 accent-emerald-500">
+          </label>
+          <label for="ashar" class="flex flex-col justify-between items-center min-h-[150px] bg-emerald-800 p-6 text-stone-50 rounded-2xl cursor-pointer hover:scale-105 transition-transform">
+            <span class="text-3xl mb-2">🌇</span>
+            <span class="font-bold">Ashar</span>
+            <input type="checkbox" id="ashar" class="w-6 h-6 mt-4 accent-emerald-500">
+          </label>
+          <label for="maghrib" class="flex flex-col justify-between items-center min-h-[150px] bg-emerald-800 p-6 text-stone-50 rounded-2xl cursor-pointer hover:scale-105 transition-transform">
+            <span class="text-3xl mb-2">🌘</span>
+            <span class="font-bold">Maghrib</span>
+            <input type="checkbox" id="maghrib" class="w-6 h-6 mt-4 accent-emerald-500">
+          </label>
+          <label for="isya" class="flex flex-col justify-between items-center min-h-[150px] bg-emerald-800 p-6 text-stone-50 rounded-2xl cursor-pointer hover:scale-105 transition-transform">
+            <span class="text-3xl mb-2">✨</span>
+            <span class="font-bold">Isya</span>
+            <input type="checkbox" id="isya" class="w-6 h-6 mt-4 accent-emerald-500">
+          </label>
+      
+       </div>
+
+      <button id="tombol-simpan-shalat" class="w-full mt-8 bg-emerald-800 text-white font-bold py-4 rounded-2xl hover:bg-emerald-600 transition-all active:scale-95">
+        Simpan Progress Ibadah
+      </button>
+    </section>
+  </main>
+
+  <footer class="mt-[2rem] bg-emerald-800 w-full p-6 text-center text-stone-50 text-sm shadow-2xl">
+    <p>Selamat Menunaikan Ibadah Puasa</p>
+  </footer>
+
+  <script src="sholat.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do List Ramadan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-emerald-900">
+  <header class="bg-emerald-800 text-stone-50 p-4 shadow-2xl">
+    <nav class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+      <div class="flex items-center gap-2">
+        <div class="w-10 h-10 bg-stone-50 rounded-full flex items-center justify-center text-emerald-800 font-bold text-xl">
+          🕌
+        </div>
+        <h1 class="text-base font-bold bg-stone-50 rounded-2xl text-emerald-800 px-4 py-2">Ramadan To do List</h1>
+      </div>
+
+      <ul class="flex items-center gap-4 bg-emerald-900/50 p-2 rounded-xl text-sm font-medium">
+        <li><a href="index.html"><button class="px-4 py-2 hover:bg-emerald-700 transition-all rounded-lg">Shalat</button></a></li>
+        <li><a href="quran.html"><button class="px-4 py-2 bg-stone-50 text-emerald-800 rounded-lg shadow">Qur'an</button></a></li>
+        <li><a href="puasa.html"><button class="px-4 py-2 hover:bg-emerald-700 transition-all rounded-lg">Puasa</button></a></li>
+        <li><a href="dzikir.html"><button class="px-4 py-2 hover:bg-emerald-700 transition-all rounded-lg">Dzikir</button></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="max-w-8xl mx-auto p-6">
+     <section class="bg-emerald-800/40 p-6 md:p-8 rounded-3xl border border-emerald-500/30 mt-6">
+        <div class="flex justify-between items-end mb-4">
+          <div>
+            <span class="text-xs opacity-70 text-stone-50 block mb-1 tracking-widest">Daily Progress</span>
+            <span id="kata-motivasi" class="text-xl font-bold text-stone-50">Terus tingkatkan tilawahmu! ✨</span>
+          </div>
+          <span id="persentase-quran" class="text-4xl font-black text-stone-50">0%</span>
+        </div>
+        
+        <div class="w-full h-5 bg-stone-200 rounded-full overflow-hidden shadow-inner">
+          <div id="persentase-bar" class="h-full bg-emerald-600 transition-all duration-700 ease-out shadow-lg" style="width: 0%"></div>
+        </div>
+      </section>
+
+    <section class="mt-[4rem] bg-stone-50 p-6 md:p-8 rounded-[2rem] shadow-2xl">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl font-bold text-emerald-900">Tadarus Qur'an</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+        <div class="flex flex-col gap-3">
+          <label for="halaman-dibaca" class="text-sm font-semibold text-emerald-800 ml-2">Halaman yang Sudah Dibaca</label>
+          <input type="number" id="halaman-dibaca" placeholder="Contoh: 5" 
+            class="p-4 rounded-2xl border border-stone-200 focus:ring-2 focus:ring-emerald-500 outline-none transition-all bg-stone-50">
+        </div>
+
+        <div class="flex flex-col gap-3">
+          <label for="target-halaman" class="text-sm font-semibold text-emerald-800 ml-2">Target Halaman Hari Ini</label>
+          <input type="number" id="target-halaman" placeholder="Contoh: 10" 
+            class="p-4 rounded-2xl border border-stone-200 focus:ring-2 focus:ring-emerald-500 outline-none transition-all bg-stone-50">
+        </div>
+      </div>
+
+      <button id="tombol-simpan-quran" class="w-full mt-10 bg-emerald-800 text-white font-bold py-4 rounded-2xl hover:bg-emerald-700 active:scale-95 transition-all shadow-lg shadow-emerald-900/10">
+        Update Progres Tilawah
+      </button>
+    </section>
+  </main>
+
+  <footer class="mt-[2rem] bg-emerald-800 w-full p-6 text-center text-stone-50 text-sm shadow-2xl">
+    <p>Selamat Menunaikan Ibadah Puasa</p>
+  </footer>
+
+  <script src="quran.js"></script>
+
+</body>
+</html>

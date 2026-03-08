@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To do List Ramadan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-emerald-900 min-h-screen flex flex-col">
+  <header class="bg-emerald-800 text-stone-50 p-4 shadow-2xl">
+    <nav class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+      <div class="flex items-center gap-2">
+        <div class="w-10 h-10 bg-stone-50 rounded-full flex items-center justify-center text-emerald-800 font-bold text-xl">
+          🕌
+        </div>
+        <h1 class="text-base font-bold bg-stone-50 rounded-2xl text-emerald-800 px-4 py-2">Ramadan To do List</h1>
+      </div>
+
+      <ul class="flex items-center gap-4 bg-emerald-900/50 p-2 rounded-xl text-sm font-medium">
+        <li><a href="index.html"><button class="px-4 py-2 hover:bg-emerald-700 transition-all rounded-lg ">Shalat</button></a></li>
+        <li><a href="quran.html"><button class="px-4 py-2 hover:bg-emerald-700 transition-all rounded-lg">Qur'an</button></a></li>
+        <li><a href="puasa.html"><button class=" px-4 py-2 hover:bg-emerald-700 transition-all rounded-lg">Puasa</button></a></li>
+        <li><a href="dzikir.html"><button class="px-4 py-2 bg-stone-50 text-emerald-800 rounded-lg shadow">Dzikir</button></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="max-w-8xl mx-auto p-6 flex-grow flex items-center justify-center">
+    <section class="bg-emerald-950 flex flex-col justify-center items-center px-16 py-16 rounded-full gap-6 w-[280px] h-[280px] md:w-auto md:h-auto">
+      <section class="">
+        <h2 id="angka" class="text-7xl md:text-8xl text-stone-50 font-bold transition-all duration-100">0</h2>
+      </section>
+
+      <section class="flex justify-center items-center mt-6 gap-6">
+        <button id="tombol-reset" class="text-center bg-stone-50 text-base md:text-xl px-6 py-2 rounded-xl text-emerald-800 active:scale-95 transition-all duration-300 hover:bg-red-900 hover:text-stone-50">Reset</button>
+
+        <button id="tombol-tambah" class="text-center bg-stone-50 text-base md:text-xl px-8 py-2 rounded-xl text-emerald-800 active:scale-95 transition-all duration-300 hover:bg-emerald-800 hover:text-stone-50">+</button>
+      </section>
+    </section>
+    
+  </main>
+
+  <footer class="mt-[2rem] bg-emerald-800 w-full p-6 text-center text-stone-50 text-sm shadow-2xl">
+    <p>Selamat Menunaikan Ibadah Puasa</p>
+  </footer>
+
+  <script src="dzikir.js"></script>
+</body>
+</html>
