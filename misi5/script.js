@@ -40,8 +40,7 @@ function jadwalImsakKota(id) {
   .then((data) => {
     animasiLoading.classList.add("hidden");
     const jadwalArray = data.data.jadwal;
-    
-    tabelJadwal.innerHTML = "";
+    console.log(data.data.jadwal);
 
     const hariIni = new Date().toISOString().split("T")[0];
 
