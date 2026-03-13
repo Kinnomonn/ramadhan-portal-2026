@@ -41,8 +41,8 @@ tombolHitung.addEventListener("click", function() {
   
   }
 
-  if (!hargaEmas.value || !gaji.value || !gajiLain.value
-    || !totalEmas.value
+  if (!hargaEmas.value && !gaji.value && !gajiLain.value
+    && !totalEmas.value
   ) {
     alert("masukkan nilai pada kolom pada tabel terlebih dahulu!");
   } else {
